@@ -1,12 +1,12 @@
 class Customer
-   attr_accessor :name, :age
+   attr_accessor :name, :age # has a name and an age (can change)
 
    @@all = []  #knows about all cusotmers
 
    def initialize(name, age)
-     @name = name
+     @name = name    #name and age are set upon initialization
      @age = age
-     @@all << self  #knows about all cusotmers
+     @@all << self  #knows about all cusotmers (tracks every instance of customer upon creation)
    end
 
    def self.all  #knows about all cusotmers
