@@ -17,4 +17,10 @@ class Waiter
     Meal.new(self, customer, total, tip) #order of arguments for Meal.new() remains the same - a waiter, a customer, a total and a tip.
   end
 
+  def meals
+    Meal.all.select do |meal|
+      meal.waiter == self
+    end
+  end      
+
 end
