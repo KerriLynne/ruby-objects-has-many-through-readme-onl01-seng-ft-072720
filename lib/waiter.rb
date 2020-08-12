@@ -24,11 +24,11 @@ class Waiter
   end
 
   def best_tipper
-    best_tipped_meal = meals.max do |meal_a, meal_b|
+    best_tipped_meal = meals.max do |meal_a, meal_b|  # use the array we get from #meals
       meal_a.tip <=> meal_b.tip
     end
 
-    best_tipped_meal.customer
-  end    
+    best_tipped_meal.customer  #  return the customer of the meal with the highest tip
+  end
 
 end
