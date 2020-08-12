@@ -13,7 +13,7 @@ class Customer
     @@all
   end
 
-  def new_meal(waiter, total, tip=0)
+  def new_meal(waiter, total, tip=0) # take in an instance of a waiter and supply the total and tip, which we'll have defaulted to 0 here as well
     Meal.new(waiter, self, total, tip)
   end
 
