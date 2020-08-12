@@ -3,7 +3,7 @@ class Meal
 
   @@all = []
 
-  def initialize(waiter, customer, total, tip=0)
+  def initialize(waiter, customer, total, tip=0)  # now all the details of each meal instance. That includes not only the total cost and the tip
     @waiter = waiter
     @customer = customer
     @total = total
