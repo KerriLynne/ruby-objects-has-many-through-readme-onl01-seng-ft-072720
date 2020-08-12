@@ -19,7 +19,7 @@ class Customer
 
   def meals
     Meal.all.select do |meal|  #  the customer is going to look at all of the meals, and then select only the ones that belong to them
-      meal.customer == self
+      meal.customer == self  #  returning only the ones where the meal's customer matches the current customer instance.
     end
   end
 
