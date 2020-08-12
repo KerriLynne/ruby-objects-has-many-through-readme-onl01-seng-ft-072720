@@ -24,7 +24,7 @@ class Customer
   end
 
   def waiters
-    meals.map do |meal|
+    meals.map do |meal|  #   take the array of all of Rachel's meals, map over it, getting the waiter from each of those meals.
       meal.waiter
     end
   end
