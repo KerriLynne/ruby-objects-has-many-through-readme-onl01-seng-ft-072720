@@ -13,4 +13,8 @@ class Waiter
     @@all
   end
 
+  def new_meal(customer, total, tip=0)
+    Meal.new(self, customer, total, tip) #order of arguments for Meal.new() remains the same - a waiter, a customer, a total and a tip.
+  end
+
 end
