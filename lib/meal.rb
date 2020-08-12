@@ -8,8 +8,8 @@ class Meal
     @customer = customer
     @total = total
     @tip = tip
-    @@all << self #  know all the details of each meal instance. That includes not only the total cost and the tip
-  end             #  but also who the customer and waiter were for each meal.
+    @@all << self   #  know all the details of each meal instance. That includes not only the total cost and the tip
+  end               #  but also who the customer and waiter were for each meal.
 
   def self.all
     @@all
