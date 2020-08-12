@@ -18,9 +18,9 @@ class Waiter
   end
 
   def meals
-    Meal.all.select do |meal|
+    Meal.all.select do |meal|  # the waiter needs a way to get all the meals they have served.
       meal.waiter == self
     end
-  end      
+  end
 
 end
