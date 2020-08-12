@@ -18,10 +18,10 @@ class Customer
   end
 
   def meals
-    Meal.all.select do |meal|
+    Meal.all.select do |meal|  #  the customer is going to look at all of the meals, and then select only the ones that belong to them
       meal.customer == self
     end
-  end    
+  end
 
 
 end
